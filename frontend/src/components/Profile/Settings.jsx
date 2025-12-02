@@ -42,7 +42,7 @@ function Settings() {
       {!ProfileData && <div className='flex items-center justify-center h-[100%]'><Loader/></div>}
 
       {ProfileData && (
-        <div className="h-[100%] p-0 md:p-4 text-zinc-100">
+        <div className="h-[90%] p-0 md:p-4 text-zinc-100">
           <h1 className="text-3xl md:text-5xl font-semibold text-zinc-500 mb-8">
             Settings
           </h1>

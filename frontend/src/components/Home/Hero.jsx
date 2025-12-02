@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import hero from "../../assets/hero.png";
 
 function Hero() {
   return (
-    <div className="h-screen h-[65vh] flex flex-col md:flex-row items-center justify-center">
+    <div className="h-screen h-[63vh] flex flex-col md:flex-row items-center justify-center">
       <div className="w-full mb-12 md:mb-0 lg:w-3/6 flex flex-col items-center lg:start justify-center">
         <h1 className="text-6xl lg-text-6xl font-semibold text-yellow-100 text-center lg:text-left">
           Discover Your Next Great Read
@@ -19,7 +20,7 @@ function Hero() {
         </div>
       </div>
       <div className="w-full lg:w-3/6 h-auto lg:h-[100%] flex items-center justify-center">
-        <img src="./hero.png" alt="hero" />
+        <img src={hero} alt="hero" />
       </div>
     </div>
   )
