@@ -6,9 +6,6 @@ const { authenticateToken } = require('./userAuth');
 // const { response } = require('express');
 
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
 //sign up
 router.post('/sign-up', async (req, res) => {
     try {
