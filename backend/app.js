@@ -20,7 +20,7 @@ app.use('/api/v1',Order)
 
 
 //creating Port
-const Port = process.env.PORT || 1000;
+const port = process.env.PORT || 1000;
 app.listen(Port,()=>{
-    console.log(`sever started at port ${process.env.PORT}`);
+    console.log(`sever started at port ${port}`);
 })
