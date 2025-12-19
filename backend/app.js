@@ -8,8 +8,15 @@ const Books = require('./routers/book')
 const Favourite = require('./routers/favourite')
 const Cart = require('./routers/cart')
 const Order = require('./routers/order')
-app.use(cors())
 app.use(express.json())
+app.use(cors({
+    origin: [
+      "https://book-store-fawn-one.vercel.app",
+      "https://book-store-1t9h.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  }));
 
 //routes
 app.use('/api/v1',User)
