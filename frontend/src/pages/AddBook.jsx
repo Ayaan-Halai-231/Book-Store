@@ -31,7 +31,7 @@ const AddBook =()=>{
                 alert("all feild are required")
             }else{
                 const response = await axios.post(
-                    'http://localhost:1000/api/v1/add-book',
+                    'https://bookstore-api.onrender.com/api/v1/add-book',
                     Data,
                     {headers}
                 );

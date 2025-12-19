@@ -22,7 +22,7 @@ function SignUp() {
         alert("all feild are required")
       }else{
         const response = await axios.post(
-          "http://localhost:1000/api/v1/sign-up",
+          "https://bookstore-api.onrender.com/api/v1/sign-up",
           Values
         )
         alert(response.data.message );
