@@ -4,7 +4,7 @@ import { authActions } from "../store/auth"
 import { useDispatch } from 'react-redux'
 import axios from 'axios'
 
-function LogIn() {
+function Login() {
 
   const [Values, setValues] = useState({
     username:"",
@@ -84,4 +84,4 @@ function LogIn() {
   )
 }
 
-export default LogIn
+export default Login

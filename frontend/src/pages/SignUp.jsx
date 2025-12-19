@@ -26,7 +26,7 @@ function SignUp() {
           Values
         )
         alert(response.data.message );
-        navigate('/LogIn')
+        navigate('/Login')
       }
     } catch (error) {
       alert(error.response.data.message);

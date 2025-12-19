@@ -70,7 +70,7 @@ function Navbar() {
               {isLoggedIn === false && (
                 <>
                   <div className="hidden md:flex gap-4"> 
-                    <Link to="/LogIn" className="px-4 py-1 border border-blue-500 rounded hover:bg-white  hover:text-zinc-800 transition-all duration-300">LogIn</Link>
+                    <Link to="/Login" className="px-4 py-1 border border-blue-500 rounded hover:bg-white  hover:text-zinc-800 transition-all duration-300">LogIn</Link>
                     <Link to="/SignUp"  className="px-4 py-1 bg-blue-500 rounded hover:bg-white hover:text-zinc-800 transition-all duration-300">SignUp</Link>
                   </div>
                 </>
@@ -100,7 +100,7 @@ function Navbar() {
             {isLoggedIn === false && (
               <>
               <Link 
-                to="/LogIn" 
+                to="/Login" 
                 className={`${MobileNav} px-8 py-2 mb-8 text-3xl font-semiblod border border-blue-500 rounded text-white hover:bg-white  hover:text-zinc-800 transition-all duration-300`}>
                 LogIn
               </Link>

@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import {BrowserRouter as Router, Routes,Route } from 'react-router-dom'
 import AllBooks from './pages/AllBooks'
-import LogIn from './pages/LogIn'
+import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import Cart from './pages/Cart'
 import Profile from './pages/Profile'
@@ -48,7 +48,7 @@ const App = () =>{
             <Route path='/profile/settings' element={<Settings/>}/>
           </Route>
           <Route path='/SignUp' element={<SignUp/>}/>
-          <Route path='/LogIn' element={<LogIn/>}/>
+          <Route path='/Login' element={<Login/>}/>
           <Route path='/updateBook/:id' element={<UpdateBook/>}/>
           <Route path='view-book-details/:id' element={<ViewBookDetails/>}/>
         </Routes>
