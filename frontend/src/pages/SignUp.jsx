@@ -23,13 +23,22 @@ function SignUp() {
       }else{
         const response = await axios.post(
           "https://bookstore-api.onrender.com/api/v1/sign-up",
-          Values
+          Values,
+          {
+            timeout: 60000
+          }
         )
         alert(response.data.message );
         navigate('/Login')
       }
     } catch (error) {
-      alert(error.response.data.message);
+      if (error.response) {
+        // Backend responded with error (400, 500, etc.)
+        alert(error.response.data.message);
+      } else {
+        // No response (Render sleeping / network issue)
+        alert("Server is waking up. Please wait 30 seconds and try again.");
+      }
     }
   }
 
