@@ -13,7 +13,7 @@ function UserOrderHistory() {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        'https://bookstore-api.onrender.com/api/v1/get-order-history',
+        'https://book-store-9-2ews.onrender.com/api/v1/get-order-history',
         { headers }
       )
       console.log(response);

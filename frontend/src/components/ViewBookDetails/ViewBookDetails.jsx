@@ -19,7 +19,7 @@ function ViewBookDetails() {
     useEffect(() => {
         const fetch = async () =>{
             const response = await axios.get(
-                `https://bookstore-api.onrender.com/api/v1/get-book-by-id/${id}`
+                `https://book-store-9-2ews.onrender.com/api/v1/get-book-by-id/${id}`
                 );
                 console.log(response);
 
@@ -35,7 +35,7 @@ function ViewBookDetails() {
         }
         const handleFavourite = async()=>{
             const response = await axios.put(
-                'https://bookstore-api.onrender.com/api/v1/add-book-to-favourite',
+                'https://book-store-9-2ews.onrender.com/api/v1/add-book-to-favourite',
                 {},
                 { headers }
             )
@@ -43,7 +43,7 @@ function ViewBookDetails() {
         }
         const handleCart = async ()=>{
             const response = await axios.put(
-                'https://bookstore-api.onrender.com/api/v1/add-to-cart',
+                'https://book-store-9-2ews.onrender.com/api/v1/add-to-cart',
                 {},
                 { headers }
             )
@@ -51,7 +51,7 @@ function ViewBookDetails() {
         }
         const deletebook = async () =>{
             const response = await axios.delete(
-                'https://bookstore-api.onrender.com/api/v1/delete-book',
+                'https://book-store-9-2ews.onrender.com/api/v1/delete-book',
                 { headers }
             )
             alert(response.data.message)

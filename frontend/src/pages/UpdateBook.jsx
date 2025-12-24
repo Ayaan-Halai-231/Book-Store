@@ -38,7 +38,7 @@ function UpdateBook() {
                 alert("all feild are required")
             }else{
                 const response = await axios.put(
-                    'https://bookstore-api.onrender.com/api/v1/update-book',
+                    'https://book-store-9-2ews.onrender.com/api/v1/update-book',
                     Data,
                     {headers}
                 );
@@ -60,7 +60,7 @@ function UpdateBook() {
     useEffect(() => {
         const fetch = async () =>{
             const response = await axios.get(
-                `https://bookstore-api.onrender.com/api/v1/get-book-by-id/${id}`
+                `https://book-store-9-2ews.onrender.com/api/v1/get-book-by-id/${id}`
                 );
                 console.log(response);
 

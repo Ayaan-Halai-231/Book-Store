@@ -22,7 +22,7 @@ function SignUp() {
         alert("all feild are required")
       }else{
         const response = await axios.post(
-          "https://bookstore-api.onrender.com/api/v1/sign-up",
+          "https://book-store-9-2ews.onrender.com/api/v1/sign-up",
           Values,
           {
             timeout: 60000
